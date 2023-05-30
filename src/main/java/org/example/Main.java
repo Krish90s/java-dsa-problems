@@ -1,24 +1,17 @@
 package org.example;
 
 
-import org.example.ContainsDuplicate.ContainsDuplicate;
-import org.example.MaximumProductSubarray.MaximumProductSubarray;
-import org.example.MaximumSubArray.MaximumSubArray;
-import org.example.ProductOfArrayExceptSelf.ProductOfArrayExceptSelf;
-import org.example.StockProfit.StockProfit;
+import org.example.ThreeSum.ThreeSum;
 
-import java.util.*;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        int[] nums = {2,3,-2,4};
+        int[] nums = {-1,0,1,2,-1,-4};
 
-        MaximumProductSubarray maximumProductSubarray = new MaximumProductSubarray(nums);
+        ThreeSum threeSum = new ThreeSum(nums);
 
-        int result = maximumProductSubarray.bruteForceMethod();
-        System.out.println(result);
-
-
+        System.out.println(threeSum.efficientMethod());
     }
 
 
